@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/stil.css">
+</head>
+
+<body>
+    <div id="Main">
+        <table id="NavBar">
+            <tr>
+                <td>
+                    <a href="#">
+                        <h1>BR</h1>
+                        <p>Architects</p>
+                    </a>
+                </td>
+                <td>
+                    <!--Prazno-->
+                </td>
+                <td>
+                    <a href="#">
+                        <p>Projects</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="#">
+                        <p>About</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="#">
+                        <p>Contact</p>
+                    </a>
+                </td>
+            </tr>
+        </table>
+
+        <div id="BackDiv">
+            <div id="BackTekst">
+                <h1>BR</h1>
+                <p>Architects</p>
+            </div>
+        </div>
+
+        <h2>Projects</h2>
+        <br>
+        <hr>
+
+        <table id="ProjectsTable">
+            <tr>
+                <td>
+                    <p>Summer House</p>
+                    <img src="../img/house5.jpg">
+                </td>
+                <td>
+                    <p>Brick House</p>
+                    <img src="../img/house2.jpg">
+                </td>
+                <td>
+                    <p>Renovated</p>
+                    <img src="../img/house3.jpg">
+                </td>
+                <td>
+                    <p>Barn House</p>
+                    <img src="../img/house4.jpg">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Brick House</p>
+                    <img src="../img/house2.jpg">
+                </td>
+                <td>
+                    <p>Summer House</p>
+                    <img src="../img/house5.jpg">
+                </td>
+                <td>
+                    <p>Barn House</p>
+                    <img src="../img/house4.jpg">
+                </td>
+                <td>
+                    <p>Renovated</p>
+                    <img src="../img/house3.jpg">
+                </td>
+            </tr>
+        </table>
+
+        <h2>About</h2>
+        <br>
+        <hr>
+        <p class="About">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        <table id="TableOsobe">
+            <tr>
+                <td>
+                    <img src="../img/team2.jpg">
+                    <h3>John Doe</h3>
+                    <span>CEO & Founder</span>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    <button>Contact</button>
+                </td>
+                <td>
+                    <img src="../img/team1.jpg">
+                    <h3>Jane Doe</h3>
+                    <span>Architect</span>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    <button>Contact</button>
+                </td>
+                <td>
+                    <img src="../img/team3.jpg">
+                    <h3>Mike Ross</h3>
+                    <span>Architect</span>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    <button>Contact</button>
+                </td>
+                <td>
+                    <img src="../img/team4.jpg">
+                    <h3>Dan Star</h3>
+                    <span>Architect</span>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    <button>Contact</button>
+                </td>
+            </tr>
+        </table>
+
+        <h2>Contact</h2>
+        <br>
+        <hr>
+        <p>Lets get in touch and talk about your and our next project.</p>
+        <form action="#" method="POST" id="FormaContact">
+            <input type="text" placeholder=" Name">
+            <input type="email" placeholder=" Email">
+            <input type="text" placeholder=" Subject">
+            <input type="text" placeholder=" Comment">
+            <input type="submit" value="SEND MESSAGE" class="SendBtn">
+        </form>
+
+
+        <div id="map">
+
+        </div>
+        <script>
+            function myMap() {
+                var mapOptions = {
+                    center: new google.maps.LatLng(41.881832, -87.623177),
+                    zoom: 11,
+                    mapTypeId: google.maps.MapTypeId.HYBRID
+                }
+                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+        <div id="Footer">
+            <p>Powered by
+                <a href="#">w3.css</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
